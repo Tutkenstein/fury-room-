@@ -1,0 +1,488 @@
+/* Definicja przydatnych poczatkowych klas dla calego body */
+body
+{
+	margin: 0;
+	font-family: 'Rajdhani', sans-serif;
+	background: #fff;
+	display: none;
+}
+body.ready {
+	display: inherit;
+}
+body img
+{
+	border: 0;
+}
+
+/* funkcja opóźniania animacji - transition */
+a, span, strong, :before, :after, button, img
+ {
+	-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	-ms-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+}
+
+body .center
+{
+	max-width: 1200px;
+	width: 96%; /* stricte pod katem responsywnosci */
+	margin: 0 auto;
+	padding: 0 2%;
+}
+
+body .left
+{
+	float: left;
+}
+
+body .right
+{
+	float: right;
+}
+
+body .alignRight
+{
+	text-align: right;
+}
+
+body .alignCenter
+{
+	text-align: center;
+}
+
+body .alignLeft
+{
+	text-align: left;
+}
+
+/***********************--[ Top-Site ]--***********************/
+body > div.topSite,
+body > div.sliderTop,
+body > div.contact,
+body > div.footer,
+body > div.footer .center,
+body > div.containerSlider  {
+	overflow: hidden;
+}
+body > div.topSite {
+    padding: 11px 0 14px 0;
+    border-bottom: 1px solid #d7d7d7;
+}
+body > div.topSite div.menu ul {
+	list-style: none;
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+}
+body > div.topSite div.menu ul li,
+body > div.topSite div.menu {
+	display: inline-block;
+}
+body > div.topSite div.menu ul li a:hover {   
+    background: #e8e8e8;
+    color: #ce0627;
+}
+body > div.topSite div.menu ul li a {
+	text-decoration: none;
+	color: #8a8a8a;
+	font: 400 20px Rajdhani;
+    padding: 17px 45px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
+body > div.topSite div.social {
+	display: inline-block;
+	vertical-align: middle;
+} 
+body > div.topSite div.social a {
+	text-decoration: none;
+	margin: 0 20px 0 80px;
+	display: block;
+	height: 40px;
+}
+body > div.topSite div.social a:hover img {
+    opacity: 0.5;
+}
+body > div.topSite div.right div.fbBox,
+body > div.topSite div.right div.ytBox {
+	display: inline-block;
+}
+body > div.topSite div.social div.ytBox a {
+	margin: 0 12px 0 0;
+}
+body > div.topSite div.right {
+    margin-top: 39px;
+}
+body > .scrollup {
+    width: 64px;
+    height: 64px;
+    text-decoration: none;
+    background: url(../images/up.png) no-repeat 0px 0px;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    display: none;
+    z-index: 1;
+}
+
+/***********************--[ Slider-Top ]--***********************/
+body > div.sliderTop {
+    position: relative;
+    border-bottom: 3px solid #ce0627;
+    padding: 0;
+    margin: auto;
+}
+body > div.sliderTop .left {
+    width: 62%;
+    margin-left: 60px;
+    padding-bottom: 40px;
+    margin: 160px 0 0 60px;
+}
+body > div.sliderTop div.left h3.title {
+    font: 700 90px Rajdhani;
+    color: #2f2e2e;
+    margin: 0;
+   	line-height: 75px;
+}
+body > div.sliderTop div.left h3.title:before,
+body > .infoMiddle .center .box h2:before,
+body .header h2.moreInfo:before {
+	content:"";
+	background: #ce0627;
+	width: 5px;
+	height: 89px;
+	display: inline-block;
+	position: absolute;
+	left: 0;
+	top: 175px;
+}
+body > div.sliderTop .left span,
+body > div.sliderTop .left p {
+    font: 400 36px Rajdhani;
+    color: #959595;
+}
+body > div.sliderTop div.right {
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+}
+body > div.sliderTop .left p {
+	font: 400 18px Rajdhani;
+	line-height: 30px;
+	max-width: 81%;
+	margin: 60px 0 50px;
+}
+body > div.sliderTop .left a {
+	font: 500 18px Rajdhani;
+}
+body > div.sliderTop .left a.button {
+	text-decoration: none;
+	color: #fff;
+	padding: 18px 56px;
+	background: #ce0627;
+	display: inline-block;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+}
+body > div.sliderTop .left div.button-container {
+    margin-right: 58px;
+    display: inline-block;
+}
+body > div.sliderTop .left a.button:hover {
+    background: #ab0116;
+}
+body > div.sliderTop .left a.button.video:hover {
+    border: 2px solid #ab0116;
+    opacity: 0.9;
+}
+body > div.sliderTop .left a.button.video {
+	background: #ffffff;
+	border: 2px solid #ce0627;
+	color: #2f2e2e;
+	padding: 15px 26px;	
+}
+body > div.sliderTop .left a.button.video:after {
+	background: url(../images/Bez-nazwy-2.png) center no-repeat;
+	width: 24px;
+	height: 26px; 
+	display: inline-block;
+	content: "";
+	vertical-align: middle;
+	margin-left: 30px;
+}
+body > div.sliderTop .left a.button.video:hover:after {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+/***********************--[ Info-Middle ]--***********************/
+body > .infoMiddle {
+	width: 100%;
+	height: 248px; 
+	background: #131313;
+	margin-top: 285px;
+}
+body > .infoMiddle .center {
+	position: relative;
+	height: 100%;
+}
+body > .infoMiddle .center img {
+	position: absolute; 
+	bottom: 45px;
+	opacity: 0;
+	transform: translateY(-300px);
+	transition: all 0.3s ease-in-out;
+}
+body > .infoMiddle .center img.is-showing {
+	opacity: 1;
+	transform: translateY(0px);
+}
+body > .infoMiddle .center .box {
+	display: inline-block;
+	opacity: 0;
+	transform: translateY(-300px);
+	transition: all 0.3s ease-in-out;
+}
+body > .infoMiddle .center .box.is-showing {
+	opacity: 1;
+	transform: translateY(0px);
+}
+body > .infoMiddle .center .box + .box {
+	margin-left: 140px;
+}
+body > .infoMiddle .center .infoBox {
+	padding: 55px 0;
+}
+body > .infoMiddle .center .box h2 {
+	color: #ffffff;
+	font-weight: 700; 
+	font-size: 90px;
+	margin: 0;
+}
+body > .infoMiddle .center .box span {
+	font: 500 18px Rajdhani;
+	color: #606060;
+}
+body > .infoMiddle .center .box h2:before {
+	height: 58px;
+	position: relative;
+	top: inherit;
+	left: inherit;
+	margin-right: 42px;
+}
+/***********************--[ About-Us ]--***********************/
+body > .aboutUS .header {
+	margin-top: 100px;
+}
+body .header h2.moreInfo,
+body .header h2.headerTopElement {
+	font: 700 36px Rajdhani;
+	color: #131313;
+	display: inline-block;
+	margin: 0;
+}
+body .header h2.moreInfo {
+	font-weight: 300;
+	color: #b2b2b2;
+}
+body .header span {
+	display: block;
+	font: 400 18px Rajdhani;
+	color: #5d5d5d;
+	margin-top: 10px;
+}
+body .header h2.moreInfo:before {
+	width: 1px;
+	height: 43px;
+	display: inline-block;
+	top: -2px;
+	left: inherit;
+	margin: 0 30px 0 24px;
+	vertical-align: middle;
+	position: inherit;
+}
+body > .aboutUS .left,
+body > .aboutUS .right {
+	display: inline-block;
+	width: 29%;
+	opacity: 0;
+}
+body > .aboutUS h4 {
+	font: 700 24px Rajdhani;
+	color: #131313;
+}
+body > .aboutUS .left h4:after,
+body > .aboutUS .right h4:before {
+	content:"";
+	background: #ce0627;
+	width: 5px;
+	height: 30px;
+	display: inline-block;
+	margin-left: 15px;
+	vertical-align: -webkit-baseline-middle;
+}
+body > .aboutUS .right h4:before {
+	margin: 0 15px 0 0;
+}
+body > .aboutUS p {
+	font: 400 16px Rajdhani;
+	color: #959595;
+	line-height: 30px;
+}
+body > .aboutUS .content {
+	margin-top: 90px;
+}
+
+/***********************--[ Slider-Bottom ]--***********************/
+body > .sliderBottom {
+	background: url(../images/bgBottom.jpg) center no-repeat;
+	margin-top: 50px;
+    padding-top: 65px;
+}
+body .header.headerSlider .headerTopElement {
+	color: #ffffff;
+}
+body > .sliderBottom .containerSlider ul {
+	margin: 0;
+	padding: 0 0 80px;
+	list-style-type: none;
+}
+body > .sliderBottom .containerSlider ul li {
+	display: inline-block;
+	width: 26%;
+	margin-top: 85px;
+	padding-bottom: 13px;
+	color: #b1b1b1;
+	font: 500 18px Rajdhani;
+	border-bottom: 1px solid #1e1e1e;
+	opacity: 0;
+	position: relative;
+	transform: translateX(-20px);
+	transition: all 0.3s ease-in-out;
+}		
+body > .sliderBottom .containerSlider ul li.is-showing {
+	opacity: 1;
+	transform: translateX(0px);
+}	
+body > .sliderBottom .containerSlider ul li:nth-child(3n+2) {
+	margin-right: 7%;
+	margin-left: 7%;
+}
+body > .sliderBottom .containerSlider ul li:before {
+	content:"";
+	background: url(../images/bird.png) center;
+	width: 15px;
+	height: 12px;
+	display: inline-block;
+	margin-right: 30px;
+	vertical-align: top;
+}
+
+/***********************--[ Photo-Slider ]--***********************/
+body .slick-dotted.slick-slider {
+	margin:170px auto 110px;
+}
+body .slick-photoSlider {
+	max-width: 800px;
+}
+body .slick-photoSlider img,
+body .slick-slide img {
+    margin-right: 5px;
+	width: 359px;
+	height: 359px;
+}
+body .slick-slide {
+    opacity: .4;
+}
+body .slick-center{
+    display: block;
+    max-width: 10% !important;
+    max-height:20% !important;
+    opacity: 1;
+	z-index: 3;
+	position: realitve;
+}
+
+/***********************--[ Contact ]--***********************/
+body .contact div.right {
+    width: 30%;
+    text-align: left;
+    margin-top: 28px;
+}
+body .contact .header {
+    margin-bottom: 100px;
+}
+body .contact .right span,
+body .contact .right a {
+    display: block;
+    font: 500 18px Rajdhani;
+    color: #000000;
+    text-decoration: none;  
+}
+body .contact .right a:hover,
+body .contact .right span.adres:hover {
+    color: #ce0627;
+}
+body .contact .right a.tel {
+    margin-bottom: 40px;
+    margin-top: 35px;
+}
+body .contact .right .adres:before,
+body .contact .right a.tel:before {
+    content: '';
+    display: inline-block;
+    width: 27px;
+    height: 24px;
+    background: url(../images/home.png);
+    position: relative;
+    margin-right: 30px;
+}
+body .contact .right a.tel:before {
+    background: url(../images/tel.png);
+    width: 24px;
+}
+body .contact .right span.open {
+    padding-top: 40px;
+    border-top: 1px solid #dbdbdb;
+}
+
+/***********************--[ Footer ]--***********************/
+body .footer {
+    background: #131313;
+    margin-top: 80px;
+    margin-bottom: 5px;
+    padding: 7px 0;
+}
+body .footer p,
+body .footer a {
+    font: 400 14px Rajdhani;
+    color: #868686;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
